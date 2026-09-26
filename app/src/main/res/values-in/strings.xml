@@ -14,7 +14,7 @@
     <string name="previous_song">Lagu Sebelumnya</string>
     <string name="play_pause_button">Tombol Putar/Jeda</string>
     <string name="next_button">Lagu Berikutnya</string>
-    <string name="no_artists_found">Artis tidak ditemukan!</string>
+    <string name="no_artists_found">Tidak ada artis ditemukan!</string>
     <string name="artists">Artis</string>
     <string name="albums">Album</string>
     <string name="music">Trek</string>
@@ -28,14 +28,14 @@
     <string name="permission_granted">Izin diberikan, Kamu bisa melanjutkan…</string>
     <string name="request_permission">Berikan Izin</string>
     <string name="next_step">Langkah berikutnya</string>
-    <string name="no_music_title">Tidak ada trek yang ditemukan !</string>
-    <string name="no_music_desc">Lalu kenapa kamu memasang aplikasi ini ?</string>
+    <string name="no_music_title">Tidak ada lagu ditemukan!</string>
+    <string name="no_music_desc">Lalu, mengapa Anda memasang aplikasi ini?</string>
     <string name="no_music_tip">Tip:Jangan lupa Daftar Putih folder yang kamu mau scan di pengaturan!</string>
     <string name="error_deleting_song">Ada masalah dalam menghapus lagu.</string>
     <string name="deleting_song_OK">Berhasil menghapus lagu.</string>
     <string name="okay">Baik</string>
     <string name="misc">Lainnya</string>
-    <string name="no_albums_found">Tidak ada album ditemukan !</string>
+    <string name="no_albums_found">Tidak ada album ditemukan!</string>
     <string name="follow_sys">Ikuti Sistem</string>
     <string name="system">Sistem</string>
     <string name="ascending">Menaik</string>
@@ -45,7 +45,7 @@
     <string name="initial_folder_selection">Pilih folder yang di Daftar Putih, lainya akan di Daftar Hitam</string>
     <string name="blacklisted_folders">Folder Daftar Hitam</string>
     <string name="delete_folder">Hapus folder</string>
-    <string name="folder_delete_u_sure">Apakah kamu sungguh ingin menghapus folder ?</string>
+    <string name="folder_delete_u_sure">Apakah Anda yakin ingin menghapus folder ini?</string>
     <string name="alrdy_blacklisted">Folder sudah di daftar hitam!</string>
     <string name="pls_restart">Mulai ulang aplikasi untuk menerapkan perubahan!</string>
     <string name="use_sys_font">Gunakan font sistem</string>
@@ -75,7 +75,7 @@
     <string name="manage_shown_tabs">Atur tab yang ditampilkan</string>
     <string name="set_sleep_timer">Atur waktu tidur</string>
     <string name="go_to">Pergi ke: %s</string>
-    <string name="no_lyrics_note">Tidak ada lirik yang ditemukan !</string>
+    <string name="no_lyrics_note">Tidak ada lirik ditemukan!</string>
     <string name="from_saf">Track ini datang dari S.A.F</string>
     <string name="open_saf">Buka S.A.F untuk menambah trek</string>
     <string name="blacklisted">Di daftar hitamkan</string>
@@ -83,7 +83,7 @@
     <string name="whitelisted">Di daftar putih</string>
     <string name="saf_manager">Manager S.A.F</string>
     <string name="saf">S.A.F</string>
-    <string name="no_playlists">Tidak ada daftar putar yang ditemukan !</string>
+    <string name="no_playlists">Tidak ada playlist ditemukan!</string>
     <string name="alrdy_in_playlist">Track sudah ada di daftar putar!</string>
     <string name="del_playlist">Hapus daftar putar</string>
     <string name="modify">Ubah</string>
@@ -117,12 +117,12 @@
     <string name="screen_selection">Pemilihan layar</string>
     <string name="emoji">Emoji</string>
     <string name="remove_emoji">Hapus emoji</string>
-    <string name="look_and_feel">Lihat dan rasakan</string>
-    <string name="look_and_feel_desc">Musik milikmu, kenapa tidak gayanya juga?</string>
+    <string name="look_and_feel">Tampilan dan nuansa</string>
+    <string name="look_and_feel_desc">Musiknya milik Anda, mengapa gayanya tidak?</string>
     <string name="now_playing">Sedang diputar</string>
-    <string name="now_playing_desc">Buat sesuai gayamu!</string>
+    <string name="now_playing_desc">Jadikan sesuai gaya Anda!</string>
     <string name="library">Pustaka</string>
-    <string name="library_desc">Atur semua trek, seperti DJ !</string>
+    <string name="library_desc">Kelola semua lagu Anda layaknya seorang DJ!</string>
     <string name="more_desc">Pengaturan lain yang tidak memiliki halaman tersendiri.</string>
     <string name="add_queue">Tambah ke antrian</string>
     <string name="import_lrc">Impor file .lrc</string>
@@ -136,10 +136,10 @@
     <string name="album">Album</string>
     <string name="artist">Artis</string>
     <string name="shuffle">Acak</string>
-    <string name="no_result_found">Hasil tidak ditemukan !</string>
-    <string name="better_luck_next_time">Semoga beruntung lain waktu!</string>
+    <string name="no_result_found">Tidak ada hasil ditemukan!</string>
+    <string name="better_luck_next_time">Semoga lebih beruntung lain kali!</string>
     <string name="no_playlist_desc">Akan keren kalau kamu membuat satu</string>
-    <string name="are_u_sure">Apakah kamu yakin?</string>
+    <string name="are_u_sure">Apakah Anda yakin?</string>
     <string name="lyrics">Lirik</string>
     <string name="playback_controls">Kontrol pemutaran</string>
     <string name="audio">Audio</string>
@@ -198,7 +198,7 @@
     <string name="load">Muat</string>
     <string name="not_a_lyric_file">Bukan file lirik!</string>
     <plurals name="tracks">
-        <item quantity="other">%d trek</item>
+        <item quantity="other">Lagu</item>
     </plurals>
     <plurals name="albums_plural">
         <item quantity="other">%d album</item>
@@ -212,5 +212,60 @@
     <string name="open_eq">Equalizer</string>
     <string name="no_album_desc">Kamu punya lagu single saja itu tidak masalah</string>
     <string name="no_artist_desc">Aku yakin kamu bernyanyi lebih baik</string>
-    <string name="playback_controls_desc">Untuk penggemar musik sejati !</string>
+    <string name="playback_controls_desc">Untuk penggemar musik sejati!</string>
+    <string name="keep_alive">Tetap aktif</string>
+    <string name="keep_alive_desc">Tetap putar musik saat aplikasi dihapus dari aplikasi terbaru</string>
+    <string name="error_pasting">Terjadi kesalahan saat menempelkan dari papan klip</string>
+    <string name="lyrics_settings_desc">Buatlah seindah suara nyanyian Anda!</string>
+    <string name="add_lyrics">Tambahkan lirik</string>
+    <string name="type_lyrics_here">Ketik lirik di sini</string>
+    <string name="no_lyrics_added_yet">Anda belum menambahkan lirik!</string>
+    <string name="adjust_timestamp">Sesuaikan stempel waktu</string>
+    <string name="click_to_add_lyrics">Klik untuk menambahkan lirik</string>
+    <string name="lyrics_editor">Editor lirik</string>
+    <string name="click_plus_to_start">Klik tombol tambah untuk memulai!</string>
+    <string name="rescan_tracks">Pindai ulang lagu</string>
+    <string name="rescan_tracks_desc">Tindakan ini akan memaksa Android memindai ulang semua file pada perangkat</string>
+    <string name="generic_error">Terjadi kesalahan!</string>
+    <string name="art_lyrics">Lirik pada sampul</string>
+    <string name="art_lyrics_desc">Menampilkan lirik langsung pada sampul album, bukan di halaman terpisah. Klik sampul album untuk melihat lirik.</string>
+    <string name="play_next">Putar berikutnya</string>
+    <string name="default_launch_screen">Layar peluncuran default</string>
+    <string name="main">Utama</string>
+    <string name="start">Awal</string>
+    <string name="center">Tengah</string>
+    <string name="end">Akhir</string>
+    <string name="text_alignment">Perataan teks</string>
+    <string name="music_and_audio_perm"><![CDATA[Izin musik dan audio]]></string>
+    <string name="audio_perm_desc">Izin ini diperlukan untuk mengakses lagu Anda.</string>
+    <string name="navigation">Navigasi</string>
+    <string name="navigation_desc">Anda tidak akan memerlukan peta untuk ini!</string>
+    <string name="aod">Tampilan selalu aktif</string>
+    <string name="aod_desc">Untuk sedikit tambahan daya tahan baterai, bukan?</string>
+    <string name="enter_new_value">Masukkan nilai baru</string>
+    <string name="library_setup">Pengaturan pustaka</string>
+    <string name="allow_perform_changes">Harap izinkan aplikasi untuk melakukan perubahan!</string>
+    <string name="library_setup_desc"><![CDATA[Pilih folder untuk dipindai dan atur durasi lagu minimum]]></string>
+    <string name="date">Tanggal</string>
+    <string name="unknown_error">Kesalahan tidak diketahui</string>
+    <string name="no_lyrics_desc">Tidak ada lirik tersemat atau file .lrc yang ditemukan untuk lagu ini!</string>
+    <string name="shape_morph">Transformasi bentuk</string>
+    <string name="shape_morph_desc">Bentuk sampul album akan berubah secara dinamis berdasarkan apakah pemutar sedang memutar musik atau tidak</string>
+    <string name="dynamic_duration">Durasi dinamis</string>
+    <string name="dynamic_duration_desc">Menyesuaikan durasi lagu berdasarkan kecepatan pemutaran untuk menampilkan waktu dengar sebenarnya</string>
+    <string name="enter_value_between_range">Masukkan nilai antara %1$d dan %2$d</string>
+    <string name="widget_2_1_description">Hanya kontrol</string>
+    <string name="widget_4_1_description">Widget klasik lebar penuh</string>
+    <plurals name="delete_playlists">
+        <item quantity="other">Hapus playlist</item>
+    </plurals>
+    <plurals name="delete_tracks">
+        <item quantity="other">Hapus lagu</item>
+    </plurals>
+    <plurals name="delete_playlists_u_sure">
+        <item quantity="other">Apakah Anda yakin ingin menghapus %d playlist? Tindakan ini tidak dapat dibatalkan!</item>
+    </plurals>
+    <plurals name="delete_tracks_u_sure">
+        <item quantity="other">Apakah Anda yakin ingin menghapus %d lagu? Tindakan ini tidak dapat dibatalkan!</item>
+    </plurals>
 </resources>
