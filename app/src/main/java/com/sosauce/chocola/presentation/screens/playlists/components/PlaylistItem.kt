@@ -245,7 +245,7 @@ fun PlaylistItem(
 
             val bottomText = if (enabled) {
                 pluralStringResource(
-                    R.plurals.tracks,
+                    R.plurals.tracks_plural,
                     playlist.musics.size,
                     playlist.musics.size
                 )

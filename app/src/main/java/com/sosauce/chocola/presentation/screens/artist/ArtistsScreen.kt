@@ -162,7 +162,7 @@ fun SharedTransitionScope.ArtistItem(
             text = buildString {
                 append(
                     pluralStringResource(
-                        R.plurals.tracks,
+                        R.plurals.tracks_plural,
                         artist.tracks.size,
                         artist.tracks.size
                     )

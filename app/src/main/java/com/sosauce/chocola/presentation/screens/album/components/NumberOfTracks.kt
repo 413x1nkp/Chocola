@@ -24,7 +24,7 @@ fun NumberOfTracks(size: Int) {
         ) {
             Text(
                 text = pluralStringResource(
-                    R.plurals.tracks,
+                    R.plurals.tracks_plural,
                     size,
                     size
                 )

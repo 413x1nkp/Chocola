@@ -305,7 +305,7 @@ fun PlaylistDeletionDialog(
                                 )
                                 Text(
                                     text = pluralStringResource(
-                                        R.plurals.tracks,
+                                        R.plurals.tracks_plural,
                                         playlist.musics.size,
                                         playlist.musics.size
                                     ),
