@@ -26,6 +26,9 @@ import androidx.compose.material3.rememberSliderState
 import androidx.compose.material3.toShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -191,6 +194,7 @@ private fun EqualizerBandSlider(
     onBandGainChanged: (Float, Float) -> Unit
 ) {
 
+
     val sliderState = rememberSliderState(
         value = gain,
         trackRange = -15f..15f
@@ -248,9 +252,10 @@ private fun EqualizerBandSlider(
                     sliderState = state,
                     drawStopIndicator = null,
                     thumbTrackGapSize = 0.dp,
-                    trackInsideCornerSize = 0.dp
+                    trackInsideCornerSize = 0.dp,
                 )
-            }
+            },
+            onValueChange = { sliderState.value = it }
         )
         Text(
             text = "${sliderState.value.toInt()}dB",
