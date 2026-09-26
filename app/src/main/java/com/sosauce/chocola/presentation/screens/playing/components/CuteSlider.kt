@@ -25,6 +25,7 @@ import androidx.compose.material3.rememberSliderState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -63,21 +64,20 @@ fun CuteSlider(
     val animatedPosition by animateFloatAsState(
         targetValue = tempSliderValue ?: currentPosition
     )
+    // key needed cuz else track range doesn't update when changing tracks
+    val sliderState = key(musicState.duration) {
+        rememberSliderState(
+            value = currentPosition,
+            trackRange = 0f..musicState.duration.toFloat()
+        )
+    }
 
-    val sliderState = rememberSliderState(
-        value = currentPosition,
-        trackRange = 0f..musicState.duration.toFloat()
-    )
 
     LaunchedEffect(animatedPosition) {
         sliderState.value = animatedPosition
     }
 
     val multiplier = if (dynamicDuration) musicState.speed else 1f
-    val currentFormattedTime =
-        DateUtils.formatElapsedTime(((musicState.position / multiplier) / 1000).toLong())
-    val totalFormattedTime =
-        DateUtils.formatElapsedTime(((musicState.duration / multiplier) / 1000).toLong())
 
     Column(modifier = modifier) {
         Row(
@@ -85,7 +85,7 @@ fun CuteSlider(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = currentFormattedTime,
+                text = DateUtils.formatElapsedTime(((musicState.position / multiplier) / 1000).toLong()),
                 color = MaterialTheme.colorScheme.primary
             )
 
@@ -108,8 +108,6 @@ fun CuteSlider(
                     )
                 )
 
-                val seekFormattedTime =
-                    DateUtils.formatElapsedTime(((draggingPos / multiplier) / 1000).toLong())
 
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(
@@ -120,7 +118,7 @@ fun CuteSlider(
                     )
                     Spacer(Modifier.width(4.dp))
                     Text(
-                        text = seekFormattedTime,
+                        text =  DateUtils.formatElapsedTime(((draggingPos / multiplier) / 1000).toLong()),
                         style = MaterialTheme.typography.bodyMediumEmphasized.copy(
                             color = MaterialTheme.colorScheme.primaryContainer
                         )
@@ -131,7 +129,7 @@ fun CuteSlider(
             Spacer(Modifier.weight(1f))
 
             Text(
-                text = totalFormattedTime,
+                text = DateUtils.formatElapsedTime(((musicState.duration / multiplier) / 1000).toLong()),
                 color = MaterialTheme.colorScheme.primary
             )
         }
