@@ -284,4 +284,6 @@
     <string name="widget_2_1_description">Tylko przyciski sterowania</string>
     <string name="widget_4_1_description">Klasyczny widget na całą szerokość</string>
     <string name="aod">Always-on display</string>
+    <string name="keep_alive">Utrzymuj działanie aplikacji</string>
+    <string name="keep_alive_desc">Kontynuuj odtwarzanie muzyki po zamknięciu aplikacji z ekranu ostatnich zadań</string>
 </resources>
