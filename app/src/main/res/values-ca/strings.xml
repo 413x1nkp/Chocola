@@ -124,7 +124,7 @@
     <string name="library_desc">Gestiona totes les teves pistes, com un DJ!</string>
     <string name="more_desc">Altres configuracions que no mereixien la seva pròpia pàgina.</string>
     <string name="add_queue">Afegeix a la cua</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d pista</item>
         <item quantity="other">%d pistes</item>
     </plurals>

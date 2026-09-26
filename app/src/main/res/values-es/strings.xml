@@ -180,7 +180,7 @@
     <string name="playlist_tag_no_edit">No puedes editar las etiquetas una vez creadas, pero puedes borrarlas</string>
     <string name="already_in_queue">Ya está en la cola</string>
     <string name="already_in_playlist">La pista ya está en la lista de reproducción</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d pista</item>
         <item quantity="many">%d pistas</item>
         <item quantity="other">%d pistas</item>

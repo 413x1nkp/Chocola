@@ -178,7 +178,7 @@
     <string name="name_and_emoji">Nimi ja emoji</string>
     <string name="load">Laadi</string>
     <string name="not_a_lyric_file">See pole laulusõnade fail!</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">Lood</item>
         <item quantity="other">Lood</item>
     </plurals>

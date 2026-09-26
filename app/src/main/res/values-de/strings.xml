@@ -176,7 +176,7 @@
     <string name="playlist_tag_no_edit">Tags können nach ihrer Erstellung nicht mehr bearbeitet werden, aber du kannst sie löschen</string>
     <string name="already_in_queue">Schon in der Warteschlange</string>
     <string name="already_in_playlist">Titel ist schon in dieser Playlist</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d Lied</item>
         <item quantity="other">%d Lieder</item>
     </plurals>

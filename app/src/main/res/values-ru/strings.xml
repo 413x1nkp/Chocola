@@ -172,7 +172,7 @@
     <string name="color">Цвет</string>
     <string name="already_in_queue">Уже в очереди</string>
     <string name="already_in_playlist">Песня уже в плейлисте</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d песня</item>
         <item quantity="few">%d песни</item>
         <item quantity="many">%d песен</item>

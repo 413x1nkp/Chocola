@@ -197,7 +197,7 @@
     <string name="name_and_emoji">Nama &amp; emoji</string>
     <string name="load">Muat</string>
     <string name="not_a_lyric_file">Bukan file lirik!</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="other">Lagu</item>
     </plurals>
     <plurals name="albums_plural">

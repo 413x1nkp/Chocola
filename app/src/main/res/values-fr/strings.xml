@@ -180,7 +180,7 @@
     <string name="playlist_tag_no_edit">Vous ne pouvez pas modifier les balises une fois qu\'elles sont créées, mais vous pouvez les supprimer.</string>
     <string name="already_in_queue">Déjà dans la file d\’attente</string>
     <string name="already_in_playlist">Ce titre est déjà dans la playlist.</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">Titre</item>
         <item quantity="many">Titres</item>
         <item quantity="other">Titres</item>

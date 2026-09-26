@@ -99,7 +99,7 @@
     <string name="search_lyrics">Sözleri ara</string>
     <string name="song_loading">Şarkı yükleniyor…</string>
     <string name="use_carousel">Karusel kullan</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d Parça</item>
         <item quantity="other">%d Parça</item>
     </plurals>

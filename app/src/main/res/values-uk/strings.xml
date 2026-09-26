@@ -205,7 +205,7 @@
     <string name="name_and_emoji">Ім\'я та смайлик</string>
     <string name="load">Завантажити</string>
     <string name="not_a_lyric_file">Файл неправильного формату!</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d трек</item>
         <item quantity="few">%d треки</item>
         <item quantity="many">%d треків</item>

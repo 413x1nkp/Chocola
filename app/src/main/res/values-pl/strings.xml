@@ -202,7 +202,7 @@
     <string name="name_and_emoji">Nazwa i emoji</string>
     <string name="load">Wczytaj</string>
     <string name="not_a_lyric_file">To nie jest plik z tekstem utworu!</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">Utwór</item>
         <item quantity="few">Utwory</item>
         <item quantity="many">Utworów</item>

@@ -199,7 +199,7 @@
     <string name="name_and_emoji">Nome ed emoji</string>
     <string name="load">Carica</string>
     <string name="not_a_lyric_file">Non è un file di testo con un testo delle canzoni!</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d Traccia</item>
         <item quantity="many">%d Tracce</item>
         <item quantity="other">Tracce</item>

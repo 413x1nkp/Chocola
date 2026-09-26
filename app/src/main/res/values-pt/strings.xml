@@ -200,7 +200,7 @@
     <string name="name_and_emoji">Nome e emoji</string>
     <string name="load">Carregar</string>
     <string name="not_a_lyric_file">Não é um ficheiro de letra!</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="one">%d faixa</item>
         <item quantity="many">%d faixas</item>
         <item quantity="other">%d faixas</item>

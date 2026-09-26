@@ -125,7 +125,7 @@
     <string name="audio_perm_desc">هذا الصلاحية مطلوبة للوصول إلى الموسيقى.</string>
     <string name="navigation">التنقل</string>
     <string name="navigation_desc">لن تحتاج إلى خريطة لهذا!</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="zero">%d اغنية</item>
         <item quantity="one">%d اغنية</item>
         <item quantity="two">%d اغاني</item>

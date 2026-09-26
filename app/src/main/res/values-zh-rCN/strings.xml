@@ -140,7 +140,7 @@
     <string name="artist">作曲家</string>
     <string name="album">专辑</string>
     <string name="date_modified">修改时间</string>
-    <plurals name="tracks">
+    <plurals name="tracks_plural">
         <item quantity="other">歌曲</item>
     </plurals>
     <plurals name="albums_plural">
