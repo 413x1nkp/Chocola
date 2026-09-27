@@ -23,18 +23,19 @@ class SafManager(
 
     fun fetchLatestSafTracks(): Flow<List<CuteTrack>> = userPreferences.getSafTracks()
         .mapLatest { tracks ->
-            tracks.map { uri ->
+            tracks.mapNotNull { uri ->
                 uriToTrack(uri.toUri())
             }
         }
         .flowOn(Dispatchers.IO)
 
 
-    private fun uriToTrack(uri: Uri): CuteTrack {
+    private fun uriToTrack(
+        uri: Uri
+    ): CuteTrack? {
         return context.contentResolver.openFileDescriptor(uri, "r")?.use { fd ->
             val metadata = TagLib.getMetadata(fd.dup().detachFd())
 
-            println("uri: $uri")
             val title = metadata?.propertyMap?.get("TITLE")?.getOrNull(0)  ?: "<unknown>"
             val artist = metadata?.propertyMap?.get("ARTIST")?.joinToString(", ") ?: "<unknown>"
             val album = metadata?.propertyMap?.get("ALBUM")?.getOrNull(0) ?: "<unknown>"
@@ -49,11 +50,10 @@ class SafManager(
                 title = title,
                 artist = artist,
                 album = album,
-                folder = "-",
+                folder = "S.A.F",
                 path = uri.path ?: "Unknown path",
                 isSaf = true
             )
-        } ?: throw IllegalArgumentException("Unable to open file descriptor for uri")
+        }
     }
-
 }
