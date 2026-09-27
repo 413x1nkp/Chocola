@@ -39,6 +39,7 @@ android {
         }
     }
 
+
     signingConfigs {
         create("release") {
             val keystoreFile = System.getenv("KEYSTORE_FILE")
