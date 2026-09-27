@@ -15,6 +15,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.CompositingStrategy
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import com.sosauce.chocola.data.datastore.rememberCenterTitle
@@ -34,7 +36,9 @@ fun TitleAndArtist(
     val textAlignment = if (centerTitle) TextAlign.Center else TextAlign.Start
 
     Column(
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
+            .graphicsLayer(compositingStrategy = CompositingStrategy.Offscreen)
     ) {
         AnimatedContent(
             modifier = Modifier.fillMaxWidth(),
