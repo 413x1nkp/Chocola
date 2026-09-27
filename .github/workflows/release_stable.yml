@@ -53,6 +53,29 @@
         - name: Build Release APK
           run: ./gradlew assembleRelease --parallel --no-daemon --no-build-cache
 
+        - name: Setup Node.js
+          uses: actions/setup-node@v7
+
+        - name: Install Copilot CLI
+          run: npm install -g @github/copilot
+
+        - name: Generate release note
+          env:
+            COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_PAT }}
+            RELEASE_NOTE_PROMPT: ${{ secrets.RELEASE_NOTE_PROMPT }}
+          run: |
+            SUMMARY=$(copilot -p "$RELEASE_NOTE_PROMPT" \
+            -s \
+            --allow-tool='shell(git:*)' \
+            --no-ask-user)
+            
+            {
+            echo "SUMMARY<<EOF"
+            echo "$SUMMARY"
+            echo "EOF"
+            } >> "$GITHUB_ENV"
+
+
         - name: Create Git tag
           env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -69,5 +92,7 @@
             tag_name: ${{ env.TAG }}
             name: ${{ env.TAG }}
             files: app/build/outputs/apk/release/Chocola_${{ env.VERSION }}.apk
+            body: ${{ env.SUMMARY }}
+            generate_release_notes: true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
