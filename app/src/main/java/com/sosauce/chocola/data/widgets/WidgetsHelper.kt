@@ -30,7 +30,6 @@ class WidgetsHelper(
         key: Preferences.Key<T>,
         value: T
     ) {
-        value
         ioScope.launch {
             widgets.fastForEach { widget ->
                 val glanceIds = manager.getGlanceIds(widget.javaClass)

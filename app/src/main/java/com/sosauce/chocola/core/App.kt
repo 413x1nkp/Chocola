@@ -1,3 +1,5 @@
+@file:OptIn(KoinExperimentalAPI::class)
+
 package com.sosauce.chocola.core
 
 import android.app.Application
@@ -8,6 +10,7 @@ import coil3.request.crossfade
 import com.sosauce.chocola.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.androix.startup.KoinStartup
+import org.koin.core.annotation.KoinExperimentalAPI
 import org.koin.dsl.koinConfiguration
 
 class App : Application(), KoinStartup, SingletonImageLoader.Factory {

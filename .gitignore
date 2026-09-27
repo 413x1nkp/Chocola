@@ -33,3 +33,4 @@ google-services.json
 *.hprof
 .DS_Store
 .kotlin/sessions/kotlin-compiler-9804472835993706459.salive
+app/release/mapping.txt
