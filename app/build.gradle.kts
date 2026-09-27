@@ -133,7 +133,6 @@ dependencies {
     implementation(libs.androidx.compose.animation.graphics.android)
     implementation(libs.lyrics.core)
     implementation(libs.androidx.compose.foundation)
-    implementation(libs.colorpicker.compose)
     implementation(libs.sweetselect.compose)
     implementation(libs.squircle.shape)
     implementation(libs.cloudy)
